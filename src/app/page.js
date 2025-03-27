@@ -31,15 +31,15 @@ export default function Home() {
             {isMenuOpen && (
                 <div className="absolute top-3 left-0 bg-[#457EAC] p-5 shadow-lg z-31 mt-16 w-1/4 h-250 border-white border-2 p-10">
                     <ul className="flex flex-col space-y-4 text-xl">
-                        <li><Link href="/portfolio"
+                        <li><Link href="/#"
                                   onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
                         </li>
-                        <li className="border-t border-white pt-5"><Link href="/about"
+                        <li className="border-t border-white pt-5"><Link href="/#"
                                   onClick={() => setIsMenuOpen(false)}>About</Link>
                         </li>
-                        <li className="border-t border-white pt-5"><Link href="/privacy"
+                        <li className="border-t border-white pt-5"><Link href="/#"
                                   onClick={() => setIsMenuOpen(false)}>Privacy Policy</Link></li>
-                        <li className="border-t border-white pt-5"><Link href="/contact"
+                        <li className="border-t border-white pt-5"><Link href="/#"
                                   onClick={() => setIsMenuOpen(false)}>Contact</Link>
                         </li>
                     </ul>
