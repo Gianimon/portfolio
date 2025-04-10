@@ -1,81 +1,62 @@
 "use client"
-import Link from "next/link";
-import {useState} from "react";
+import Burger from "@/components/burger";
+import Carousel from "@/components/carousel";
 
 export default function Home() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
 
     return (
         <div className="flex flex-col min-h-screen text-white">
             {/* Header */}
-            <header className="bg-[#457EAC]">
+            <header className="bg-[#457EAC] fixed w-full">
                 <nav>
                     <ul className="flex text-3xl">
-                        <li className="font-bold flex-auto border-b border-b-black p-5">
-                            <button onClick={toggleMenu} className="focus:outline-none">
-                                &#9776;
-                            </button>
+                        <li className="font-bold flex-auto border-b-2 border-b-white p-5">
+                            <Burger></Burger>
                         </li>
-                        <li className="font-bold flex-auto absolute left-1/2 transform -translate-x-1/2 border-b border-b-black p-5">
-                            Gian Loritz
+                        <li className="font-bold flex-auto absolute left-1/2 transform -translate-x-1/2 p-5">
+                            Home
                         </li>
                     </ul>
                 </nav>
             </header>
 
-            {/* Mobile Menu */}
-            {isMenuOpen && (
-                <div className="absolute top-3 left-0 bg-[#457EAC] p-5 shadow-lg z-31 mt-16 w-1/4 h-250 border-white border-2 p-10">
-                    <ul className="flex flex-col space-y-4 text-xl">
-                        <li><Link  href={"/portfolio"}
-                                  onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
-                        </li>
-                        <li className="border-t border-white pt-5"><Link href={"/about"}
-                                  onClick={() => setIsMenuOpen(false)}>About</Link>
-                        </li>
-                        <li className="border-t border-white pt-5"><Link  href={"/privacy"}
-                                  onClick={() => setIsMenuOpen(false)}>Privacy Policy</Link></li>
-                        <li className="border-t border-white pt-5"><Link  href={"/contact"}
-                                  onClick={() => setIsMenuOpen(false)}>Contact</Link>
-                        </li>
-                    </ul>
-                </div>
-            )}
-
-            {isMenuOpen && (
-                <div className="absolute top-19 h-250 left-0 bg-black p-5 shadow-lg z30 w-full opacity-50">
-                </div>
-            )}
-
 
             <main className="bg-[#2D5A76]">
-                <div className="ml-10 mr-10">
-                    <div>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed
-                        diam nonumy eirmod tempor invidunt ut labore et dolore
-                        magna
-                        aliquyam erat, sed diam voluptua. At vero eos et accusam
-                        et
-                        justo duo dolores et ea rebum. Stet clita kasd
-                        gubergren, no
-                        sea
-                        takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                        ipsum
-                        dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy
-                        eirmod tempor invidunt ut labore et dolore magna
-                        aliquyam
-                        erat,
-                        sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata
-                        sanctus
-                        est Lorem ipsum dolor sit amet.
+                <div>
+                    <div className={"flex mt-50 items-center"}>
+                        <img src="https://placehold.co/500x500"
+                             alt="Bild von Gian"
+                             className={"w-100% h-100% ml-30"}/>
+                        <div className=" ml-20 mr-30 text-2xl">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr,
+                            sed
+                            diam nonumy eirmod tempor invidunt ut labore et
+                            dolore
+                            magna
+                            aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam
+                            et
+                            justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no
+                            sea
+                            takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem
+                            ipsum
+                            dolor sit amet, consetetur sadipscing elitr, sed
+                            diam
+                            nonumy
+                            eirmod tempor invidunt ut labore et dolore magna
+                            aliquyam
+                            erat,
+                            sed diam voluptua. At vero eos et accusam et justo
+                            duo
+                            dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea
+                            takimata
+                            sanctus
+                            est Lorem ipsum dolor sit amet.
+                        </div>
                     </div>
                     <div className={"mt-200 mb-17"}>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
@@ -101,15 +82,24 @@ export default function Home() {
                         est Lorem ipsum dolor sit amet.
                     </div>
                 </div>
+                <div><Carousel></Carousel></div>
+
+
+                <div className="flex flex-col items-center py-10">
+                    <div className="text-3xl mb-20">
+                        Skills
+                    </div>
+                </div>
             </main>
+
             <footer
                 className="border-t-2 z-50 border-white p-5 fixed bottom-0 left-0 w-full bg-[#457EAC]">
                 <nav>
                     <ul className="flex justify-between px-32 pl-150 pr-150">
-                        <li><Link href={"/portfolio"}>Portfolio</Link></li>
-                        <li><Link href={"/about"}>About</Link></li>
-                        <li><Link href={"/privacy"}>Privacy Policy</Link></li>
-                        <li><Link href={"/contact"}>Contact</Link></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </nav>
             </footer>
