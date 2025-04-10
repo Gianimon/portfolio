@@ -20,7 +20,7 @@ export default function Burger() {
                     <div
                         className="absolute top-19 left-0 bg-[#457EAC] p-5 shadow-lg z-31 w-1/4 h-screen border-white border-2 p-10">
                         <ul className="flex flex-col space-y-4 text-xl">
-                            <li><Link href={"/portfolio"}
+                            <li><Link href={"/"}
                                       onClick={() => setIsMenuOpen(false)}>Home</Link>
                             </li>
                             <li className="border-t border-white pt-5"><Link
