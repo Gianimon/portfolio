@@ -1,12 +1,11 @@
 "use client"
 import Burger from "@/components/burger";
-import Carousel from "@/components/carousel";
 import Link from "next/link";
 
 export default function Home() {
 
     return (
-        <div className="flex flex-col min-h-screen text-white">
+        <div className="flex flex-col h-screen text-white">
             {/* Header */}
             <header className="bg-[#457EAC] fixed w-full">
                 <nav>
@@ -21,74 +20,40 @@ export default function Home() {
                 </nav>
             </header>
 
-
-            <main className="bg-[#2D5A76]">
-                <div>
-                    <div className={"flex mt-50 items-center"}>
-                        <img src="https://placehold.co/500x500"
-                             alt="Bild von Gian"
-                             className={"w-100% h-100% ml-30"}/>
-                        <div className=" ml-20 mr-30 text-2xl">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr,
-                            sed
-                            diam nonumy eirmod tempor invidunt ut labore et
-                            dolore
-                            magna
-                            aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam
-                            et
-                            justo duo dolores et ea rebum. Stet clita kasd
-                            gubergren, no
-                            sea
-                            takimata sanctus est Lorem ipsum dolor sit amet.
-                            Lorem
-                            ipsum
-                            dolor sit amet, consetetur sadipscing elitr, sed
-                            diam
-                            nonumy
-                            eirmod tempor invidunt ut labore et dolore magna
-                            aliquyam
-                            erat,
-                            sed diam voluptua. At vero eos et accusam et justo
-                            duo
-                            dolores
-                            et ea rebum. Stet clita kasd gubergren, no sea
-                            takimata
-                            sanctus
-                            est Lorem ipsum dolor sit amet.
-                        </div>
-                    </div>
-                    <div className={"mt-200 mb-17"}>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            <main className="bg-[#2D5A76] h-screen">
+                <div className={"flex mt-50 items-center"}>
+                    <img src="https://placehold.co/500x500"
+                         alt="Bild von Gian"
+                         className={"w-100% h-100% ml-30"}/>
+                    <div className=" ml-20 mr-30 text-2xl">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr,
                         sed
-                        diam nonumy eirmod tempor invidunt ut labore et dolore
+                        diam nonumy eirmod tempor invidunt ut labore et
+                        dolore
                         magna
-                        aliquyam erat, sed diam voluptua. At vero eos et accusam
+                        aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam
                         et
                         justo duo dolores et ea rebum. Stet clita kasd
                         gubergren, no
                         sea
-                        takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                        takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem
                         ipsum
-                        dolor sit amet, consetetur sadipscing elitr, sed diam
+                        dolor sit amet, consetetur sadipscing elitr, sed
+                        diam
                         nonumy
                         eirmod tempor invidunt ut labore et dolore magna
                         aliquyam
                         erat,
-                        sed diam voluptua. At vero eos et accusam et justo duo
+                        sed diam voluptua. At vero eos et accusam et justo
+                        duo
                         dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata
+                        et ea rebum. Stet clita kasd gubergren, no sea
+                        takimata
                         sanctus
                         est Lorem ipsum dolor sit amet.
-                    </div>
-                </div>
-                <div><Carousel></Carousel></div>
-
-
-                <div className="flex flex-col items-center py-10">
-                    <div className="text-3xl mb-20">
-                        Skills
                     </div>
                 </div>
             </main>
@@ -105,5 +70,5 @@ export default function Home() {
                 </nav>
             </footer>
         </div>
-    );
+    )
 }
