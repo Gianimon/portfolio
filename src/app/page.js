@@ -26,39 +26,19 @@ export default function Home() {
                          alt="Bild von Gian"
                          className={"w-100% h-100% ml-30"}/>
                     <div className=" ml-20 mr-30 text-2xl">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing
-                        elitr,
-                        sed
-                        diam nonumy eirmod tempor invidunt ut labore et
-                        dolore
-                        magna
-                        aliquyam erat, sed diam voluptua. At vero eos et
-                        accusam
-                        et
-                        justo duo dolores et ea rebum. Stet clita kasd
-                        gubergren, no
-                        sea
-                        takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem
-                        ipsum
-                        dolor sit amet, consetetur sadipscing elitr, sed
-                        diam
-                        nonumy
-                        eirmod tempor invidunt ut labore et dolore magna
-                        aliquyam
-                        erat,
-                        sed diam voluptua. At vero eos et accusam et justo
-                        duo
-                        dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata
-                        sanctus
-                        est Lorem ipsum dolor sit amet.
+                        <div className="text-5xl mb-10">
+                            Willkommen!
+                        </div>
+                        <div>
+                            Mein Name ist Gian Loritz. Ich bin ein
+                            Schüler an der Informatikmittelschule in Hottingen.
+                            Schön, dass Sie mein Portfolio besuchen.
+                        </div>
                     </div>
                 </div>
             </main>
 
             <footer><Footer></Footer></footer>
         </div>
-    )
+)
 }

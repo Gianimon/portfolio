@@ -3,13 +3,14 @@ import Carousel from "@/components/carousel";
 import Burger from "@/components/burger";
 import Link from "next/link";
 import Footer from "@/components/footer";
+import SkillBars from "@/components/skillbar";
 
 export default function AboutMe() {
 
     return (
         <div className="flex flex-col h-screen text-white">
             {/* Header */}
-            <header className="bg-[#457EAC] fixed w-full">
+            <header className="bg-[#457EAC] fixed w-full z-200">
                 <nav>
                     <ul className="flex text-3xl">
                         <li className="font-bold flex-auto border-b-2 border-b-white p-5">
@@ -22,7 +23,7 @@ export default function AboutMe() {
                 </nav>
             </header>
 
-            <main className="bg-[#2D5A76] h-screen">
+            <main className="bg-[#2D5A76] h-1000">
                 <div className={"mt-20 mb-17"}>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                     sed
@@ -53,6 +54,7 @@ export default function AboutMe() {
                     <div className="text-3xl mb-20">
                         Skills
                     </div>
+                    <div><SkillBars></SkillBars></div>
                 </div>
             </main>
 

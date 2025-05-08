@@ -43,7 +43,7 @@ export default function Carousel() {
             </div>
 
             {/* Carousel */}
-            <div className="relative w-100 max-w-4xl mx-auto">
+            <div className="relative w-120 max-w-4xl mx-auto">
                 {/* Carousel Content */}
                 <div className="overflow-hidden">
                     <div
@@ -58,7 +58,7 @@ export default function Carousel() {
                                     <img
                                         src={project.imageUrl}
                                         alt={project.title}
-                                        className="w-full h-48 object-cover"
+                                        className="w-full h-80 object-cover"
                                     />
                                     <div className="p-4">
                                         <h3 className="text-xl font-bold">{project.title}</h3>

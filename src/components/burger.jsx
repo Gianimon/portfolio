@@ -18,7 +18,7 @@ export default function Burger() {
             {
                 isMenuOpen && (
                     <div
-                        className="absolute top-19 left-0 bg-[#457EAC] p-5 shadow-lg z-31 w-1/4 h-screen border-white border-2 p-10">
+                        className="absolute top-19 left-0 bg-[#457EAC] p-5 shadow-lg z-101 w-1/4 h-screen border-white border-2 p-10">
                         <ul className="flex flex-col space-y-4 text-xl">
                             <li><Link href={"/"}
                                       onClick={() => setIsMenuOpen(false)}>Home</Link>
@@ -42,7 +42,7 @@ export default function Burger() {
             {
                 isMenuOpen && (
                     <div
-                        className="absolute top-19.5 h-250 left-0 bg-black p-5 shadow-lg z-30 w-full opacity-50 h-screen">
+                        className="absolute top-19.5 h-250 left-0 bg-black p-5 shadow-lg z-100 w-full opacity-50 h-screen">
                     </div>
                 )
             }
