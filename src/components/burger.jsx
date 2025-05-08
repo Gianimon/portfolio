@@ -28,7 +28,7 @@ export default function Burger() {
                                 onClick={() => setIsMenuOpen(false)}>About Me</Link>
                             </li>
                             <li className="border-t border-white pt-5"><Link
-                                href={"https://github.com/Gianimon"}
+                                href={"https://github.com/Gianimon"} target="_blank"
                                 onClick={() => setIsMenuOpen(false)}>GitHub</Link></li>
                             <li className="border-t border-white pt-5"><Link
                                 href={"/contact"}
