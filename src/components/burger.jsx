@@ -6,7 +6,8 @@ export default function Burger() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen)};
+        setIsMenuOpen(!isMenuOpen)
+    };
 
     return (
         /* Mobile Menu */
@@ -18,7 +19,7 @@ export default function Burger() {
             {
                 isMenuOpen && (
                     <div
-                        className="absolute top-19 left-0 bg-[#457EAC] p-5 shadow-lg z-101 w-1/4 h-screen border-white border-2 p-10">
+                        className="absolute top-19 left-0 bg-[#457EAC] p-5 shadow-lg z-101 w-1/4 h-screen border-white border-r-2 border-y-2 p-10">
                         <ul className="flex flex-col space-y-4 text-xl">
                             <li><Link href={"/"}
                                       onClick={() => setIsMenuOpen(false)}>Home</Link>
@@ -29,7 +30,8 @@ export default function Burger() {
                             </li>
                             <li className="border-t border-white pt-5"><Link
                                 href={"https://github.com/Gianimon"} target="_blank"
-                                onClick={() => setIsMenuOpen(false)}>GitHub</Link></li>
+                                onClick={() => setIsMenuOpen(false)}>GitHub</Link>
+                            </li>
                             <li className="border-t border-white pt-5"><Link
                                 href={"/contact"}
                                 onClick={() => setIsMenuOpen(false)}>Contact</Link>

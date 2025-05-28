@@ -30,8 +30,7 @@ export default function Home() {
                             Willkommen!
                         </div>
                         <div>
-                            Mein Name ist Gian Loritz. Ich bin ein
-                            Schüler an der Informatikmittelschule in Hottingen.
+                            Mein Name ist Gian Loritz.
                             Schön, dass Sie mein Portfolio besuchen.
                         </div>
                     </div>

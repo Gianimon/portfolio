@@ -1,6 +1,7 @@
 "use client"
 import Burger from "@/components/burger";
 import Footer from "@/components/footer";
+import {Github, Mail} from "lucide-react";
 
 export default function Contact() {
 
@@ -21,44 +22,25 @@ export default function Contact() {
             </header>
 
             <main className="bg-[#2D5A76] h-screen">
-                <div className={"flex mt-50 items-center"}>
-                    <img src="https://placehold.co/500x500"
-                         alt="Bild von Gian"
-                         className={"w-100% h-100% ml-30"}/>
-                    <div className=" ml-20 mr-30 text-2xl">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing
-                        elitr,
-                        sed
-                        diam nonumy eirmod tempor invidunt ut labore et
-                        dolore
-                        magna
-                        aliquyam erat, sed diam voluptua. At vero eos et
-                        accusam
-                        et
-                        justo duo dolores et ea rebum. Stet clita kasd
-                        gubergren, no
-                        sea
-                        takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem
-                        ipsum
-                        dolor sit amet, consetetur sadipscing elitr, sed
-                        diam
-                        nonumy
-                        eirmod tempor invidunt ut labore et dolore magna
-                        aliquyam
-                        erat,
-                        sed diam voluptua. At vero eos et accusam et justo
-                        duo
-                        dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata
-                        sanctus
-                        est Lorem ipsum dolor sit amet.
+                <div className={"flex justify-center mt-80 text-3xl"}>
+                    <div>
+                        Name: Gian Loritz
+                        <br></br>
+                        <br></br>
+                        Email: gianloritz@gmail.com
+                        <br></br>
+                        <br></br>
+                        Mobil: 079 822 66 95
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <a
+                            href="https://github.com/Gianimon" target="_blank">https://github.com/Gianimon
+                        </a>
                     </div>
                 </div>
             </main>
-
             <footer><Footer></Footer></footer>
         </div>
-    )
+)
 }

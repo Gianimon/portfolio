@@ -38,8 +38,8 @@ export default function Carousel() {
 
         /* Projects Section */
         <div className="flex flex-col items-center py-10">
-            <div className="text-3xl mb-20">
-                My Projects
+            <div className="text-4xl mb-20">
+                Meine Projekte
             </div>
 
             {/* Carousel */}
