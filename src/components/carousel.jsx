@@ -17,20 +17,22 @@ export default function Carousel() {
         {
             id: 1,
             title: "Geschichte der schweizer Uhrenindustrie",
-            description: "Description of project 1",
-            imageUrl: "https://via.placeholder.com/400x300?text=Project+1"
+            description: "Eine Webseite, welches ich mit zwei anderen Schüler " +
+                "aus meiner Klasse gemacht habe. Es zeigt die Schweizer Uhrenindustrie auf.",
+            imageUrl: "http://localhost:3000/geschichte-uhrenindustrie.png"
         },
         {
             id: 2,
-            title: "Minecraft Mod",
+            title: "Gianimod",
             description: "Description of project 2",
             imageUrl: "https://via.placeholder.com/400x300?text=Project+2"
         },
         {
             id: 3,
-            title: "Tank Bot",
-            description: "Description of project 3",
-            imageUrl: "https://via.placeholder.com/400x300?text=Project+3"
+            title: "Stalinium Mod",
+            description: "Eine Minecraft Mod, die mit mehreren Freunden gemacht" +
+                " wurde. Sie fügt neue Materiallien und neue Waffen ins Spiel inzu.",
+            imageUrl: "http://localhost:3000/stalinium.jpg"
         },
     ];
 
