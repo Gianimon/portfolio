@@ -8,7 +8,7 @@ export default function AboutMe() {
     return (
         <div className="flex flex-col min-h-screen text-white bg-[#2D5A76]">
             {/* Header */}
-            <header className="bg-[#457EAC] fixed w-full">
+            <header className="bg-[#457EAC] fixed w-full z-200">
                 <nav>
                     <ul className="flex text-3xl">
                         <li className="font-bold flex-auto border-b-2 border-b-white p-5">

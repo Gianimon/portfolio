@@ -22,9 +22,9 @@ export default function Home() {
 
             <main className="bg-[#2D5A76] h-screen">
                 <div className={"flex mt-50 items-center"}>
-                    <img src="https://placehold.co/500x500"
+                    <img src= "/foto_rechts2.jpg"
                          alt="Bild von Gian"
-                         className={"w-100% h-100% ml-30"}/>
+                         className={"w-sm h-sm ml-30"}/>
                     <div className=" ml-20 mr-30 text-2xl">
                         <div className="text-5xl mb-10">
                             Willkommen!
