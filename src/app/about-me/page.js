@@ -15,7 +15,7 @@ export default function AboutMe() {
                             <Burger></Burger>
                         </li>
                         <li className="font-bold flex-auto absolute left-1/2 transform -translate-x-1/2 p-5">
-                            About Me
+                            Über Mich
                         </li>
                     </ul>
                 </nav>

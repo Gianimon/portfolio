@@ -26,7 +26,7 @@ export default function Burger() {
                             </li>
                             <li className="border-t border-white pt-5"><Link
                                 href={"/about-me"}
-                                onClick={() => setIsMenuOpen(false)}>About Me</Link>
+                                onClick={() => setIsMenuOpen(false)}>Über Mich</Link>
                             </li>
                             <li className="border-t border-white pt-5"><Link
                                 href={"https://github.com/Gianimon"} target="_blank"
@@ -34,7 +34,7 @@ export default function Burger() {
                             </li>
                             <li className="border-t border-white pt-5"><Link
                                 href={"/contact"}
-                                onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                                onClick={() => setIsMenuOpen(false)}>Kontakt</Link>
                             </li>
                         </ul>
                     </div>

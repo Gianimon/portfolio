@@ -14,7 +14,7 @@ export default function Privacy() {
                             <Burger></Burger>
                         </li>
                         <li className="font-bold flex-auto absolute left-1/2 transform -translate-x-1/2 p-5">
-                            Privacy Policy
+                            Datenschutz
                         </li>
                     </ul>
                 </nav>
