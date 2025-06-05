@@ -48,6 +48,7 @@ export default function AboutMe() {
                 <section>
                     <Carousel/>
                 </section>
+                <div></div>
 
                 <section className="flex flex-col items-center py-10">
                     <h2 className="text-3xl mb-20">Skills</h2>
