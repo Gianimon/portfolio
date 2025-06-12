@@ -8,7 +8,6 @@ export default function Footer() {
                 <nav>
                     <ul className="flex justify-between px-32 pl-150 pr-150">
                         <li><Link href="/">Home</Link></li>
-                        <li><Link href="/privacy">Datenschutz</Link></li>
                         <li><Link href="/contact">Kontakt</Link></li>
                     </ul>
                 </nav>

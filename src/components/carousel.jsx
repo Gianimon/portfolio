@@ -19,20 +19,23 @@ export default function Carousel() {
             title: "Geschichte der schweizer Uhrenindustrie",
             description: "Eine Webseite, welches ich mit zwei anderen Schüler " +
                 "aus meiner Klasse gemacht habe. Es zeigt die Schweizer Uhrenindustrie auf.",
-            imageUrl: "http://localhost:3000/geschichte-uhrenindustrie.png"
+            imageUrl: "http://localhost:3000/geschichte-uhrenindustrie.png",
+            link: "https://geschichte-der-schweizer-uhrenindustrie.vercel.app/"
         },
         {
             id: 2,
             title: "Gianimod",
             description: "Description of project 2",
-            imageUrl: "https://via.placeholder.com/400x300?text=Project+2"
+            imageUrl: "https://via.placeholder.com/400x300?text=Project+2",
+            link: "https://example.com/stalinium"
         },
         {
             id: 3,
             title: "Stalinium Mod",
             description: "Eine Minecraft Mod, die mit mehreren Freunden gemacht" +
                 " wurde. Sie fügt neue Materiallien und neue Waffen ins Spiel inzu.",
-            imageUrl: "http://localhost:3000/stalinium.jpg"
+            imageUrl: "http://localhost:3000/stalinium.jpg",
+            link: "https://modrinth.com/mod/stalinium-mod"
         },
     ];
 
@@ -55,20 +58,23 @@ export default function Carousel() {
                         {projects.map((project) => (
                             <div key={project.id}
                                  className="w-full flex-shrink-0 px-4">
-                                <div
-                                    className="bg-[#457EAC] rounded-lg overflow-hidden shadow-lg">
-                                    <img
-                                        src={project.imageUrl}
-                                        alt={project.title}
-                                        className="w-full h-80 object-cover"
-                                    />
-                                    <div className="p-4">
-                                        <h3 className="text-xl font-bold">{project.title}</h3>
-                                        <p className="mt-2">{project.description}</p>
+                                <a href={project.link} target="_blank"
+                                   rel="noopener noreferrer">
+                                    <div
+                                        className="bg-[#457EAC] rounded-lg overflow-hidden shadow-lg">
+                                        <img
+                                            src={project.imageUrl}
+                                            alt={project.title}
+                                            className="w-full h-80 object-cover"
+                                        />
+                                        <div className="p-4">
+                                            <h3 className="text-xl font-bold">{project.title}</h3>
+                                            <p className="mt-2">{project.description}</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                        ))}
+                            ))}
                     </div>
                 </div>
 

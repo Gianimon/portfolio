@@ -35,7 +35,7 @@ export default function Contact() {
                         <br></br>
                         <br></br>
                         <a
-                            href="https://github.com/Gianimon" target="_blank">https://github.com/Gianimon
+                            href="https://github.com/Gianimon" target="_blank">Github
                         </a>
                     </div>
                 </div>
