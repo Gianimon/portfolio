@@ -44,6 +44,10 @@ export default function AboutMe() {
                          className={"w-100% h-100% ml-30"}/>
                 </section>
 
+                <div>
+                    Hobbys
+                </div>
+
                 {/* Restlicher Content unter dem Textblock */}
                 <section>
                     <Carousel/>
