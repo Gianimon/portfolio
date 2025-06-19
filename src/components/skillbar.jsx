@@ -20,7 +20,7 @@ export default function SkillBars() {
                         ></div>
                     </div>
                     <div className="mt-2 text-sm font-medium text-center">{skill.name}</div>
-                    <div className="text-xs text-gray-600">{skill.level}%</div>
+                    <div className="text-xs">{skill.level}%</div>
                 </div>
             ))}
         </div>
