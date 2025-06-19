@@ -20,14 +20,16 @@ export default function Carousel() {
             description: "Eine Webseite, welches ich mit zwei anderen Schüler " +
                 "aus meiner Klasse gemacht habe. Es zeigt die Schweizer Uhrenindustrie auf.",
             imageUrl: "http://localhost:3000/geschichte-uhrenindustrie.png",
-            link: "https://geschichte-der-schweizer-uhrenindustrie.vercel.app/"
+            link: "https://geschichte-der-schweizer-uhrenindustrie.vercel.app/",
+            repoLink: "https://github.com/Gianimon/portfolio"
         },
         {
             id: 2,
             title: "Gianimod",
             description: "Description of project 2",
             imageUrl: "https://via.placeholder.com/400x300?text=Project+2",
-            link: "https://example.com/stalinium"
+            link: "https://example.com/stalinium",
+            repoLink: "https://example.com/stalinium"
         },
         {
             id: 3,
@@ -35,7 +37,8 @@ export default function Carousel() {
             description: "Eine Minecraft Mod, die mit mehreren Freunden gemacht" +
                 " wurde. Sie fügt neue Materiallien und neue Waffen ins Spiel inzu.",
             imageUrl: "http://localhost:3000/stalinium.jpg",
-            link: "https://modrinth.com/mod/stalinium-mod"
+            link: "https://modrinth.com/mod/stalinium-mod",
+            repoLink: "https://github.com/KrisHD1337/Stalinium"
         },
     ];
 
@@ -58,23 +61,29 @@ export default function Carousel() {
                         {projects.map((project) => (
                             <div key={project.id}
                                  className="w-full flex-shrink-0 px-4">
-                                <a href={project.link} target="_blank"
-                                   rel="noopener noreferrer">
-                                    <div
-                                        className="bg-[#457EAC] rounded-lg overflow-hidden shadow-lg">
+                                <div
+                                    className="bg-[#457EAC] rounded-lg overflow-hidden shadow-lg">
+                                    <a href={project.link} target="_blank"
+                                       rel="noopener noreferrer">
                                         <img
                                             src={project.imageUrl}
                                             alt={project.title}
                                             className="w-full h-80 object-cover"
                                         />
-                                        <div className="p-4">
-                                            <h3 className="text-xl font-bold">{project.title}</h3>
-                                            <p className="mt-2">{project.description}</p>
-                                        </div>
+                                    </a>
+                                    <div className="p-4">
+                                        <h3 className="text-xl font-bold">{project.title}</h3>
+                                        <p className="mt-2">{project.description}</p>
+                                        <a href={project.repoLink}
+                                           target="_blank"
+                                           rel="noopener noreferrer"
+                                           className="text-xl text-white underline hover:text-blue-300">
+                                            Zum Repository
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
-                            ))}
+                        ))}
                     </div>
                 </div>
 

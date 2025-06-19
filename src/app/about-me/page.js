@@ -58,8 +58,6 @@ export default function AboutMe() {
                     <SkillBars />
                 </section>
             </main>
-
-            <footer><Footer></Footer></footer>
         </div>
     );
 }
