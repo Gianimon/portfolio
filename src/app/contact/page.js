@@ -40,7 +40,8 @@ export default function Contact() {
                     </div>
                 </div>
             </main>
+            <div></div>
         </div>
-)
+    )
 }
 
