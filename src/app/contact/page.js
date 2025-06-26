@@ -1,7 +1,7 @@
 "use client"
 import Burger from "@/components/burger";
-import Footer from "@/components/footer";
-import {Github, Mail} from "lucide-react";
+import Link from "next/link";
+
 
 export default function Contact() {
 
@@ -21,25 +21,32 @@ export default function Contact() {
                 </nav>
             </header>
 
-            <main className="bg-[#2D5A76] h-screen">
-                <div className={"flex justify-center mt-80 text-3xl"}>
-                    <div>
-                        Name: Gian Loritz
-                        <br></br>
-                        <br></br>
-                        Email: gianloritz@gmail.com
-                        <br></br>
-                        <br></br>
-                        Mobil: 079 822 66 95
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <a
-                            href="https://github.com/Gianimon" target="_blank">Github
+            <main className="bg-[#2D5A76] h-screen text-center">
+                <div className="inline-block mt-60 space-y-8">
+                    <div className="text-5xl text-white font-bold">
+                        Gian Loritz
+                    </div>
+
+                    <div
+                        className="border border-gray-300 rounded-4xl p-3 text-3xl text-gray-300 hover:text-white hover:border-white transition-colors">
+                        <Link href="mailto:gianloritz@gmail.com">Email</Link>
+                    </div>
+
+                    <div
+                        className="border border-gray-300 rounded-4xl p-3 text-3xl text-gray-300 hover:text-white hover:border-white transition-colors">
+                        <Link href="tel:+41798226695">Mobil</Link>
+                    </div>
+
+                    <div
+                        className="border border-gray-300 rounded-4xl p-3 text-3xl text-gray-300 hover:text-white hover:border-white transition-colors">
+                        <a href="https://github.com/Gianimon" target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
                         </a>
                     </div>
                 </div>
             </main>
+
         </div>
     )
 }
