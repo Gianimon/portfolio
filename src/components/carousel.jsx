@@ -80,6 +80,13 @@ export default function Carousel() {
                                            className="text-xl text-white underline hover:text-blue-300">
                                             Zum Repository
                                         </a>
+                                        <br></br>
+                                        <a href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-xl text-white underline hover:text-blue-300">
+                                            Projekt ansehen
+                                        </a>
                                     </div>
                                 </div>
                             </div>

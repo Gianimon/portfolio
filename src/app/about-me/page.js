@@ -36,17 +36,12 @@ export default function AboutMe() {
                         <br/>
                         <br/>
                         In meiner Freizeit spiele ich sehr gerne Curling.
-                        Unser Team, Baden-Lausanne spielt in der besten Liga der
-                        Junioren.
+                        Unser Team Baden-Lausanne spielt in der höchsten Juniorenliga der Schweiz.
                     </div>
                     <img src="https://placehold.co/500x500"
                          alt="Bild von Gian"
                          className={"w-100% h-100% ml-30"}/>
                 </section>
-
-                <div>
-                    Hobbys
-                </div>
 
                 {/* Restlicher Content unter dem Textblock */}
                 <section>
