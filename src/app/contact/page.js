@@ -28,17 +28,17 @@ export default function Contact() {
                     </div>
 
                     <div
-                        className="border border-gray-300 rounded-4xl p-3 text-3xl text-gray-300 hover:text-white hover:border-white transition-colors">
+                        className="border-2 border-gray-400 rounded-4xl p-3 text-3xl text-gray-400 hover:text-white hover:border-white transition-colors">
                         <Link href="mailto:gianloritz@gmail.com">Email</Link>
                     </div>
 
                     <div
-                        className="border border-gray-300 rounded-4xl p-3 text-3xl text-gray-300 hover:text-white hover:border-white transition-colors">
+                        className="border-2 border-gray-400 rounded-4xl p-3 text-3xl text-gray-400 hover:text-white hover:border-white transition-colors">
                         <Link href="tel:+41798226695">Mobil</Link>
                     </div>
 
                     <div
-                        className="border border-gray-300 rounded-4xl p-3 text-3xl text-gray-300 hover:text-white hover:border-white transition-colors">
+                        className="border-2 border-gray-400 rounded-4xl p-3 text-3xl text-gray-400 hover:text-white hover:border-white transition-colors">
                         <a href="https://github.com/Gianimon" target="_blank"
                            rel="noopener noreferrer">
                             GitHub

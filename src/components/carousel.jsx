@@ -51,7 +51,7 @@ export default function Carousel() {
             </div>
 
             {/* Carousel */}
-            <div className="relative w-120 max-w-4xl mx-auto">
+            <div className="relative w-full max-w-xl mx-auto px-2 sm:px-4">
                 {/* Carousel Content */}
                 <div className="overflow-hidden">
                     <div
@@ -59,38 +59,44 @@ export default function Carousel() {
                         style={{transform: `translateX(-${currentSlide * 100}%)`}}
                     >
                         {projects.map((project) => (
-                            <div key={project.id}
-                                 className="w-full flex-shrink-0 px-4">
-                                <div
-                                    className="bg-[#457EAC] rounded-lg overflow-hidden shadow-lg">
-                                    <a href={project.link} target="_blank"
-                                       rel="noopener noreferrer">
+                            <div key={project.id} className="w-full flex-shrink-0 px-4">
+                                <div className="bg-[#457EAC] rounded-lg overflow-hidden shadow-lg">
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer">
                                         <img
                                             src={project.imageUrl}
                                             alt={project.title}
-                                            className="w-full h-80 object-cover"
+                                            className={`w-full ${
+                                                project.id === 3
+                                                    ? "h-80 object-cover"  // nur bei Bild 3 zuschneiden
+                                                    : "h-auto object-contain" // alle anderen Bilder vollständig anzeigen
+                                            }`}
                                         />
                                     </a>
                                     <div className="p-4">
                                         <h3 className="text-xl font-bold">{project.title}</h3>
                                         <p className="mt-2">{project.description}</p>
-                                        <a href={project.repoLink}
-                                           target="_blank"
-                                           rel="noopener noreferrer"
-                                           className="text-xl text-white underline hover:text-blue-300">
+                                        <a
+                                            href={project.repoLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-xl text-white underline hover:text-blue-300"
+                                        >
                                             Zum Repository
                                         </a>
-                                        <br></br>
-                                        <a href={project.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-xl text-white underline hover:text-blue-300">
+                                        <br />
+                                        <a
+                                            href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-xl text-white underline hover:text-blue-300"
+                                        >
                                             Projekt ansehen
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         ))}
+
                     </div>
                 </div>
 
