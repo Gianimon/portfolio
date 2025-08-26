@@ -38,7 +38,7 @@ export default function Contact() {
                     </div>
 
                     <div
-                        className="border-2 border-gray-400 rounded-4xl p-3 text-3xl text-gray-400 hover:text-white hover:border-white transition-colors">
+                        className="border-2 border-gray-400 rounded-4xl p-3 text-3xl text-gray-400 hover:text-white hover:border-white sm:hover:text-white sm:hover:border-white transition-colors">
                         <a href="https://github.com/Gianimon" target="_blank"
                            rel="noopener noreferrer">
                             GitHub

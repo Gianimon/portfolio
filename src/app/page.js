@@ -20,7 +20,7 @@ export default function Home() {
             </header>
 
             {/* Main */}
-            <main className="bg-[#2D5A76] flex-1 pt-16 sm:pt-20 lg:pt-28 px-4">
+            <main className="bg-[#2D5A76] flex-1 pt-16 sm:pt-20 lg:pt-28 px-4 mt-7">
                 <div
                     className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-7rem)] gap-12 lg:gap-20">
                     {/* Bild */}

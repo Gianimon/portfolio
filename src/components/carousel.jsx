@@ -1,102 +1,94 @@
-import {useState} from "react";
+import { useState } from "react";
 
 export default function Carousel() {
+    const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () => {
-        setCurrentSlide((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+        setCurrentSlide((prev) =>
+            prev === projects.length - 1 ? 0 : prev + 1
+        );
     };
 
     const prevSlide = () => {
-        setCurrentSlide((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+        setCurrentSlide((prev) =>
+            prev === 0 ? projects.length - 1 : prev - 1
+        );
     };
 
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    // Sample project data
     const projects = [
         {
             id: 1,
-            title: "Geschichte der schweizer Uhrenindustrie",
-            description: "Eine Webseite, welches ich mit zwei anderen Schüler " +
-                "aus meiner Klasse gemacht habe. Es zeigt die Schweizer Uhrenindustrie auf.",
+            title: "Geschichte der Schweizer Uhrenindustrie",
+            description:
+                "Eine Webseite, welches ich mit zwei anderen Schüler aus meiner Klasse gemacht habe. Es zeigt die Schweizer Uhrenindustrie auf.",
             imageUrl: "http://localhost:3000/geschichte-uhrenindustrie.png",
             link: "https://geschichte-der-schweizer-uhrenindustrie.vercel.app/",
-            repoLink: "https://github.com/Gianimon/portfolio"
-        },
-        {
-            id: 2,
-            title: "Gianimod",
-            description: "Description of project 2",
-            imageUrl: "https://via.placeholder.com/400x300?text=Project+2",
-            link: "https://example.com/stalinium",
-            repoLink: "https://example.com/stalinium"
+            repoLink: "https://github.com/Gianimon/portfolio",
         },
         {
             id: 3,
             title: "Stalinium Mod",
-            description: "Eine Minecraft Mod, die mit mehreren Freunden gemacht" +
-                " wurde. Sie fügt neue Materiallien und neue Waffen ins Spiel inzu.",
+            description:
+                "Eine Minecraft Mod, die mit mehreren Freunden gemacht wurde. Sie fügt neue Materialien und neue Waffen ins Spiel hinzu.",
             imageUrl: "http://localhost:3000/stalinium.jpg",
             link: "https://modrinth.com/mod/stalinium-mod",
-            repoLink: "https://github.com/KrisHD1337/Stalinium"
+            repoLink: "https://github.com/KrisHD1337/Stalinium",
         },
     ];
 
     return (
-
-        /* Projects Section */
         <div className="flex flex-col items-center py-10">
-            <div className="text-4xl mb-20">
-                Meine Projekte
-            </div>
+            <div className="text-4xl mb-10">Meine Projekte</div>
 
-            {/* Carousel */}
-            <div className="relative w-full max-w-xl mx-auto px-2 sm:px-4">
+            {/* Carousel Wrapper */}
+            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
                 {/* Carousel Content */}
-                <div className="overflow-hidden">
+                <div className="overflow-hidden rounded-lg">
                     <div
                         className="flex transition-transform duration-300"
-                        style={{transform: `translateX(-${currentSlide * 100}%)`}}
+                        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                     >
                         {projects.map((project) => (
-                            <div key={project.id} className="w-full flex-shrink-0 px-4">
-                                <div className="bg-[#457EAC] rounded-lg overflow-hidden shadow-lg">
+                            <div key={project.id} className="w-full flex-shrink-0 px-2">
+                                <div className="bg-[#457EAC] rounded-lg overflow-hidden">
                                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                                         <img
                                             src={project.imageUrl}
                                             alt={project.title}
-                                            className={`w-full ${
+                                            className={
                                                 project.id === 3
-                                                    ? "h-80 object-cover"  // nur bei Bild 3 zuschneiden
-                                                    : "h-auto object-contain" // alle anderen Bilder vollständig anzeigen
-                                            }`}
+                                                    ? "w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover"
+                                                    : "w-full h-auto object-contain"
+                                            }
                                         />
                                     </a>
                                     <div className="p-4">
                                         <h3 className="text-xl font-bold">{project.title}</h3>
                                         <p className="mt-2">{project.description}</p>
-                                        <a
-                                            href={project.repoLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-xl text-white underline hover:text-blue-300"
-                                        >
-                                            Zum Repository
-                                        </a>
-                                        <br />
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-xl text-white underline hover:text-blue-300"
-                                        >
-                                            Projekt ansehen
-                                        </a>
+
+                                        {/* Buttons */}
+                                        <div className="flex gap-4 mt-4">
+                                            <a
+                                                href={project.repoLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="px-5 py-2 bg-[#2D5A76] rounded-xl text-white font-semibold shadow-md hover:bg-[#1f3d52] hover:shadow-lg transform hover:scale-105 transition"
+                                            >
+                                                Zum Repository
+                                            </a>
+                                            <a
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="px-5 py-2 bg-[#2D5A76] rounded-xl text-white font-semibold shadow-md hover:bg-[#1f3d52] hover:shadow-lg transform hover:scale-105 transition"
+                                            >
+                                                Projekt ansehen
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         ))}
-
                     </div>
                 </div>
 
@@ -120,11 +112,13 @@ export default function Carousel() {
                         <button
                             key={index}
                             onClick={() => setCurrentSlide(index)}
-                            className={`w-3 h-3 rounded-full ${currentSlide === index ? 'bg-white' : 'bg-gray-500'}`}
+                            className={`w-3 h-3 rounded-full ${
+                                currentSlide === index ? "bg-white" : "bg-gray-500"
+                            }`}
                         />
                     ))}
                 </div>
             </div>
         </div>
-    )
+    );
 }
