@@ -21,7 +21,7 @@ export default function Carousel() {
             title: "Geschichte der Schweizer Uhrenindustrie",
             description:
                 "Eine Webseite, welches ich mit zwei anderen Schüler aus meiner Klasse gemacht habe. Es zeigt die Schweizer Uhrenindustrie auf.",
-            imageUrl: "public/geschichte-uhrenindustrie.png",
+            imageUrl: "/geschichte-uhrenindustrie.png",
             link: "https://geschichte-der-schweizer-uhrenindustrie.vercel.app/",
             repoLink: "https://github.com/Gianimon/portfolio",
         },
@@ -30,7 +30,7 @@ export default function Carousel() {
             title: "Stalinium Mod",
             description:
                 "Eine Minecraft Mod, die mit mehreren Freunden gemacht wurde. Sie fügt neue Materialien und neue Waffen ins Spiel hinzu.",
-            imageUrl: "public/stalinium.jpg",
+            imageUrl: "/stalinium.jpg",
             link: "https://modrinth.com/mod/stalinium-mod",
             repoLink: "https://github.com/KrisHD1337/Stalinium",
         },
