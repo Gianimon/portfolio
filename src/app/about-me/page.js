@@ -38,7 +38,7 @@ export default function AboutMe() {
                         Unser Team Baden-Lausanne spielt in der höchsten Juniorenliga der Schweiz.
                     </div>
                     <img
-                        src="https://placehold.co/500x500"
+                        src="public/foto_curling.jpg"
                         alt="Bild von Gian"
                         className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-[500px] lg:h-[500px] object-cover lg:ml-12"
                     />
